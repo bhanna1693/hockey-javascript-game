@@ -1,0 +1,45 @@
+body {
+
+}
+
+button {
+    padding: 15px;
+    border-radius: 10%;
+}
+
+img {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 35px;
+}
+
+.hide {
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.team1 {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.team2 {
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 10px;
+}
