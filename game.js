@@ -15,12 +15,12 @@
 
     team1ShotButton.addEventListener("click", function(){
         let shot = Math.random();
-        let shotAttempt = parseInt(team1Shots.innerHTML);
+        team1Shots.innerHTML = parseInt(team1Shots.innerHTML) + 1;
         let goals = parseInt(team1Goals.innerHTML);
 
-        shotAttempt += 1;
-        team1Shots.innerHTML = shotAttempt;
+        
         if(shot < 0.45){
+            document.body.style.backgroundColor = "white";
             console.log("miss");
         } else {
             goals += 1;
@@ -33,12 +33,12 @@
 
     team2ShotButton.addEventListener("click", function(){
         let shot = Math.random();
-        let shotAttempt = parseInt(team2Shots.innerHTML);
+        team2Shots.innerHTML = parseInt(team2Shots.innerHTML) + 1;
         let goals = parseInt(team2Goals.innerHTML);
 
-        shotAttempt += 1;
-        team2Shots.innerHTML = shotAttempt;
+        
         if(shot < 0.55){
+            document.body.style.backgroundColor = "white";
             console.log("miss");
         } else {
             goals += 1;
@@ -59,7 +59,6 @@
         team1Goals.innerHTML = 0;
         team2Goals.innerHTML = 0;
         document.body.style.backgroundColor = "white";
-
     })
 
 })()
